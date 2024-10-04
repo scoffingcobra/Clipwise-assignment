@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Rock Crystal Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .gradient-bg {
+            background: linear-gradient(90deg, rgba(83,132,238,1) 0%, rgba(202,100,230,1) 100%);
+        }
+        .welcome-square {
+            width: 569px;
+            height: 554px;
+            top: 173px;
+            left: 821px;
+            gap: 0px;
+            border-radius: 50px 0px 0px 0px;
+            opacity: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-400 min-h-screen">
+
+    <header class="flex justify-between items-center py-6 px-12">
+        <div class="flex items-center">
+          <img src="logo.png" alt="Pop Rock Crystal Logo" style="width: 37.04px; height: 64.04px;">
+            <h1 class="text-white text-3xl font-bold ml-4">Pop Rock Crystal</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#shop" class="hover:text-gray-300">Shop</a></li>
+                <li><a href="#about" class="hover:text-gray-300">About Us</a></li>
+                <li><a href="#help" class="hover:text-gray-300">Help</a></li>
+                <li><a href="#cart" class="hover:text-gray-300"><i class="fas fa-shopping-cart">🛒</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="relative text-white py-48">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8">
+            <div class="text-center lg:text-left lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-4">Welcome to<br>Pop Rock Crystal Shop!</h2>
+                <p class="text-lg">Find unique phone accessories, crystals, jewelry, and more. Free shipping inside the U.S.</p>
+                <p class="text-lg mb-6">Our phone grips come with a limited warranty. Enjoy!</p>
+                <a href="#shop" class="bg-white text-blue-500 py-3 px-8 rounded-full font-bold shadow-lg hover:bg-gray-100 transition-all">SHOP NOW</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg hover-scale lg:w-1/2 max-w-sm mx-auto lg:mx-0">
+              <h3 class=" inline-block text-white text-sm bg-purple-500 py-1 px-2 rounded-lg -translate-x-1/2">New Lot</h3>
+              <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mb-4">
+                <p class="text-lg mb-4">
+                  <span class="font-thin text-black">CRYSTAL AGATE PHONE GRIP</span>
+                  <span class="font-semibold text-blue-500"> - 18.99$</span>
+                </p>
+                <img src="scroll bar.png" alt="Scroll Bar was added as a png because there were no other products to be added in the new lot">
+              </div>
+        </div>
+
+        
+        <svg class="absolute inset-x-0 -bottom-10" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,181.3C384,181,480,171,576,165.3C672,160,768,160,864,154.7C960,149,1056,139,1152,138.7C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </section>
+
+    <section id="shop" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-3xl font-bold text-center mb-10">All Products</h2>
+
+            <section class="py-20 bg-white" id="shop">
+              <div class="max-w-7xl mx-auto text-center">
+                  <div class="flex justify-start space-x-8 items-center mb-6">
+                      <div class="text-left">
+                          <label for="filter" class="text-m font-bold">Filter:</label>
+                          <select id="filter" class="bg-gray-200 text-black-500 py-2 px-4 rounded-lg ml-2">
+                              <option value="all-products">All Products</option>
+                              <option value="phone-accessories">Phone Accessories</option>
+                          </select>
+                      </div>
+                      
+                      <div class="text-left">
+                          <label for="sort" class="text-m font-bold">Sort:</label>
+                          <select id="sort" class="bg-gray-200 text-black-500 py-2 px-4 rounded-lg ml-2">
+                              <option value="best-selling">Best Selling</option>
+                              <option value="low-high">Price: Low to High</option>
+                              <option value="high-low">Price: High to Low</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+          </section>
+                 
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+      
+                      <div class="border rounded-lg shadow-lg p-6 hover-scale">
+                          <img src="crystal agate.png" alt="Crystal Agate Phone Grip" class="mx-auto mb-4">
+                          <h3 class="text-lg font-semibold mb-2">CRYSTAL AGATE PHONE GRIP</h3>
+                          <p class="text-blue-500 font-bold text-xl">18.99$</p>
+                          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-6 mt-4 rounded-full font-bold">BUY NOW</button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <svg class="inset-x-0" viewBox="0 0 3000 640">
+            <path fill="#ffffff" fill-opacity="1" d="M0,640L100,620C200,580,400,500,700,460C1000,420,1300,440,1600,490C1900,540,2200,490,2500,470C2800,450,2900,470,3000,600L3000,0L0,0Z"></path>
+        </svg>
+                
+        
+      </body>
+      <body class="bg-gradient-to-b from-blue-200 to-blue-400">
+        <div class="max-w-4xl mx-auto flex justify-between items-center py-10">
+            <div class="text-left">
+                <button class="text-sm text-blue-500 border border-blue-500 rounded-full px-4 py-1 mb-4">View All</button>
+                <h2 class="text-lg text-gray-500 font-bold">BEST PRICE</h2>
+                <h1 class="text-4xl font-extrabold text-gray-800">Agate Phone Grip</h1>
+                <div class="mt-4 flex items-baseline space-x-4">
+                    <span class="line-through text-gray-500 text-lg">44.50$</span>
+                    <span class="text-3xl font-bold text-orange-500">19.50$</span>
+                </div>
+                <p class="mt-4 text-gray-600 max-w-md">
+                    These Pop Rock Crystal grip tops can be swapped with other tops depending on your mood, outfit, nails, 
+                    phone case, holiday, etc.! Just gently squeeze the sides to remove and swap out with another color or design!
+                </p>
+                <button class="mt-6 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600">BUY NOW</button>
+            </div>
+    
+            <div class="relative">
+              <div class="relative">
+                <div class="relative">
+                    <div class="w-96 h-96 rounded-full bg-white flex items-center justify-center">
+                        <div class="w-80 h-80 rounded-full bg-gray-100 flex items-center justify-center">
+                            <div class="w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center">
+                                <img src="crystal agate.png" alt="Agate Phone Grip" class="w-48 h-48">
+                            </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </body>
+    
+      </html>
